@@ -1,0 +1,53 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div>
+  <div class="row">
+    <div class="col-md-12" style="margin:25px 0 5px 0">
+      <form class="form-inline">
+        <div class="form-group">
+          <label for="client">Client</label>
+          <select class="form-control" id="client" asp-for="Client" asp-items="Model.Clients">
+            <option value="">--Select Client--</option>
+          </select>
+        </div>
+        <button class="btn btn-default" type="submit">Filter</button>
+      </form>    
+    </div>
+ </div>
+  <div class="row">
+    <table class="table">
+      <thead>
+      <tr>
+        <th>ASIN</th>
+        <th>Title</th>
+        <th>MSRP</th>
+        <th>Listed Price</th>
+        <th>Last Updated</th>
+      </tr>
+      </thead>
+      <tbody>
+      @foreach (var product in Model.Products)
+      {
+        <tr>
+          <td><a href='@string.Format("https://www.amazon.com/dp/{0}", product.Asin)' target="_blank">@product.Asin</a></td>
+          <td>@product.Title</td>
+          @{var msrpText = product.Msrp != null ? Math.Round(product.Msrp.Value, 2).ToString() : "--";}
+          <td>@msrpText</td>
+          @{var priceText = product.LastPrice != null ? Math.Round(product.LastPrice.Value, 2).ToString() : "--";}
+
+          @{
+            var isDanger = (product.Msrp != null && product.LastPrice != null && product.LastPrice < product.Msrp);
+          }
+
+          <td class="@(isDanger ? "danger" : "")">@priceText</td>
+          <td>@product.LastScrapped</td>
+        </tr>
+      }
+      </tbody>
+    </table>
+  </div>
+</div>
