@@ -12612,11 +12612,11 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "C:\\Users\\pevans\\documents\\visual studio 2017\\Projects\\ProjectTracker\\ProjectTracker\\ProjectTracker.csproj",
+      "projectUniqueName": "C:\\Users\\pevans\\Documents\\Visual Studio 2017\\Projects\\ProjectTracker\\ProjectTracker\\ProjectTracker.csproj",
       "projectName": "ProjectTracker",
-      "projectPath": "C:\\Users\\pevans\\documents\\visual studio 2017\\Projects\\ProjectTracker\\ProjectTracker\\ProjectTracker.csproj",
+      "projectPath": "C:\\Users\\pevans\\Documents\\Visual Studio 2017\\Projects\\ProjectTracker\\ProjectTracker\\ProjectTracker.csproj",
       "packagesPath": "C:\\Users\\pevans\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\pevans\\documents\\visual studio 2017\\Projects\\ProjectTracker\\ProjectTracker\\obj\\",
+      "outputPath": "C:\\Users\\pevans\\Documents\\Visual Studio 2017\\Projects\\ProjectTracker\\ProjectTracker\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
