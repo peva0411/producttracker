@@ -14,7 +14,7 @@ namespace ProjectTracker.Pages
   {
     private readonly IProductRepository _productRepository;
     private readonly IClientRepository _clientRepository;
-    public IList<Product> Products { get; set; }
+    public IList<Model.Product> Products { get; set; }
     public IList<SelectListItem> Clients { get; set; }
     [BindProperty]
     public int Client { get; set; }

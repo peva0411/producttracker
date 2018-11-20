@@ -34,10 +34,10 @@
       {
         <tr>
           <td><a href='@string.Format("https://www.amazon.com/dp/{0}", product.Asin)' target="_blank">@product.Asin</a></td>
-          <td>@product.Title</td>
-          @{var msrpText = product.Msrp != null ? Math.Round(product.Msrp.Value, 2).ToString() : "--";}
+          <td><a asp-page="/Product/Index" asp-route-asin="@product.Asin"> @product.Title</a></td>
+          @{var msrpText = product.Msrp != null ? $"{product.Msrp.Value:C}" : "--";}
           <td>@msrpText</td>
-          @{var priceText = product.LastPrice != null ? Math.Round(product.LastPrice.Value, 2).ToString() : "--";}
+          @{var priceText = product.LastPrice != null ? $"{product.LastPrice.Value:C}" : "--";}
 
           @{
             var isDanger = (product.Msrp != null && product.LastPrice != null && product.LastPrice < product.Msrp);

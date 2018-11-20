@@ -19,11 +19,13 @@ namespace ProjectTracker.DataAccess
       modelBuilder.Entity<Product>().ToTable("Product");
       modelBuilder.Entity<Client>().ToTable("Client");
       modelBuilder.Entity<ClientProduct>().ToTable("ClientProduct");
+      modelBuilder.Entity<ProductPrice>().ToTable("ProductPrice");
 
     }
 
     public DbSet<Product> Products { get; set; }
       public DbSet<Client> Clients { get; set; }
       public DbSet<ClientProduct> ClientProducts { get; set; }
+      public DbSet<ProductPrice> ProductPrices { get; set; }
     }
 }

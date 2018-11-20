@@ -1,0 +1,57 @@
+﻿@page
+@model EditModel
+@{
+}
+
+
+<h2>Edit</h2>
+
+<h4>Client</h4>
+
+<hr />
+
+<div class="row">
+  <div class="col-md-4">
+    <form method="post">
+      <input type="hidden" asp-for="Client.ClientId"/>
+      <div class="form-group">
+        <label asp-for="Client.Name" class="control-label"></label>
+        <input asp-for="Client.Name" class="form-control"/>
+      </div>
+      <div class="checkbox">
+        <label>
+          <input type="checkbox" asp-for="Client.IsDeleted"> Deleted
+        </label>
+      </div>
+      <div class="form-group">
+        <input type="submit" value="Save" class="btn btn-default"/>
+      </div>
+    </form>
+  </div>
+</div>
+<div class="row">
+  <a asp-page="AddProduct">Add Product</a>
+  <table class="table">
+    <thead>
+    <tr>
+      <th>ASIN</th>
+      <th>UPC/SKU</th>
+      <th>Title</th>
+      <th>MSRP</th>
+      <th>Cost</th>
+    </tr>
+    </thead>
+    @foreach (var product in Model.Products)
+    {
+      <tr>
+        <td>@product.Asin</td>
+        <td>@product.UpcSku</td>
+        <td>@product.Title</td>
+        <td>@product.Msrp</td>
+        <td>@product.Cost</td>
+      </tr>
+    }
+
+  </table>
+
+</div>

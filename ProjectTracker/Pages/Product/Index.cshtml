@@ -1,0 +1,37 @@
+﻿@page
+@model IndexModel
+@{
+}
+<div class="row">
+  <h2>@Model.Product.Title</h2>
+  <h3>@Model.Product.Asin</h3>
+</div>
+
+<div class="row">
+  <h4>Price History</h4>
+  <table class="table">
+    <thead>
+    <tr>
+      <th>Date</th>
+      <th>Price</th>
+      <th>Sns Price</th>
+      <th>One Time Price</th>
+      <th>Buy Box Owner</th>
+      <th>Is Available</th>
+    </tr>
+    </thead>
+    <tbody>
+    @foreach (var priceHistory in Model.ProductPrices)
+    {
+      <tr>
+        <td>@priceHistory.Date</td>
+        <td>@($"{priceHistory.Price:C}")</td>
+        <td>@priceHistory.SnsPrice</td>
+        <td>@priceHistory.OneTimePrice</td>
+        <td>@priceHistory.BuyBoxOwner</td>
+        <td>@priceHistory.IsAvailable</td>
+      </tr>
+    }
+    </tbody>
+  </table>
+</div>

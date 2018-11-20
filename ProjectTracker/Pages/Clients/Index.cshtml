@@ -1,0 +1,28 @@
+﻿@page
+@model IndexModel
+@{
+}
+
+<div>
+  <h2>Clients</h2>
+  <p>
+    <a asp-page="Create">Create New</a>
+  </p>
+  <table class="table">
+    <thead>
+    <tr>
+      <th>Name</th>
+      <th></th>
+    </tr>
+    </thead>
+    <tbody>
+      @foreach(var client in Model.Clients)
+      {
+        <tr>
+          <td>@client.Name</td>
+          <td> <a asp-page="./Edit" asp-route-clientId="@client.ClientId">Edit</a></td>
+        </tr>
+      }
+    </tbody>
+  </table>
+</div>

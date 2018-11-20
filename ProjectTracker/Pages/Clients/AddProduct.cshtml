@@ -1,0 +1,40 @@
+﻿@page
+@model AddProductModel
+@{
+}
+
+<h2>Add</h2>
+
+<h4>Product</h4>
+
+<hr />
+
+<div class="row">
+  <div class="col-md-4">
+    <form method="post">
+       <div class="form-group">
+        <label asp-for="Product.Title" class="control-label"></label>
+        <input asp-for="Product.Title" class="form-control" />
+      </div>
+      <div class="form-group">
+        <label asp-for="Product.Asin" class="control-label"></label>
+        <input asp-for="Product.Asin" class="form-control"/>
+      </div>
+      <div class="form-group">
+        <label asp-for="Product.UpcSku" class="control-label"></label>
+        <input asp-for="Product.UpcSku" class="form-control"/>
+      </div>
+      <div class="form-group">
+        <label asp-for="Product.Msrp" class="control-label"></label>
+        <input asp-for="Product.Msrp" class="form-control"/>
+      </div>
+      <div class="form-group">
+        <label asp-for="Product.Cost" class="control-label"></label>
+        <input asp-for="Product.Cost" class="form-control" />
+      </div>
+      <div class="form-group">
+        <input type="submit" value="Add" class="btn btn-default"/>
+      </div>
+    </form>
+  </div>
+</div>

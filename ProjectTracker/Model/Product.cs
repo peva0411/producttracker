@@ -11,8 +11,9 @@ namespace ProjectTracker.Model
     public string Asin { get; set; }
     public string UpcSku { get; set; }
     public string Title { get; set; }
-    public decimal? Msrp  { get; set; }
+    public decimal? Msrp { get; set; }
     public decimal? LastPrice { get; set; }
-      public DateTime LastScrapped { get; set; }
-    }
+    public decimal? Cost { get; set; }
+    public DateTime? LastScrapped { get; set; }
+  }
 }
