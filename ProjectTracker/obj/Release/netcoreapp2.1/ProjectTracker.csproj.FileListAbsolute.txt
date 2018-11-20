@@ -1,0 +1,12 @@
+C:\Users\pevans\Documents\Visual Studio 2017\Projects\ProjectTracker\ProjectTracker\bin\Release\netcoreapp2.1\ProjectTracker.deps.json
+C:\Users\pevans\Documents\Visual Studio 2017\Projects\ProjectTracker\ProjectTracker\bin\Release\netcoreapp2.1\ProjectTracker.runtimeconfig.json
+C:\Users\pevans\Documents\Visual Studio 2017\Projects\ProjectTracker\ProjectTracker\bin\Release\netcoreapp2.1\ProjectTracker.runtimeconfig.dev.json
+C:\Users\pevans\Documents\Visual Studio 2017\Projects\ProjectTracker\ProjectTracker\bin\Release\netcoreapp2.1\ProjectTracker.dll
+C:\Users\pevans\Documents\Visual Studio 2017\Projects\ProjectTracker\ProjectTracker\bin\Release\netcoreapp2.1\ProjectTracker.pdb
+C:\Users\pevans\Documents\Visual Studio 2017\Projects\ProjectTracker\ProjectTracker\obj\Release\netcoreapp2.1\ProjectTracker.csprojResolveAssemblyReference.cache
+C:\Users\pevans\Documents\Visual Studio 2017\Projects\ProjectTracker\ProjectTracker\obj\Release\netcoreapp2.1\ProjectTracker.csproj.CoreCompileInputs.cache
+C:\Users\pevans\Documents\Visual Studio 2017\Projects\ProjectTracker\ProjectTracker\obj\Release\netcoreapp2.1\UserSecretsAssemblyInfo.cs
+C:\Users\pevans\Documents\Visual Studio 2017\Projects\ProjectTracker\ProjectTracker\obj\Release\netcoreapp2.1\ProjectTracker.AssemblyInfoInputs.cache
+C:\Users\pevans\Documents\Visual Studio 2017\Projects\ProjectTracker\ProjectTracker\obj\Release\netcoreapp2.1\ProjectTracker.AssemblyInfo.cs
+C:\Users\pevans\Documents\Visual Studio 2017\Projects\ProjectTracker\ProjectTracker\obj\Release\netcoreapp2.1\ProjectTracker.dll
+C:\Users\pevans\Documents\Visual Studio 2017\Projects\ProjectTracker\ProjectTracker\obj\Release\netcoreapp2.1\ProjectTracker.pdb
